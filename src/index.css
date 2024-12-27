@@ -1,0 +1,555 @@
+
+:root{
+  --font-h1: 2.986rem;
+  --font-h2: 2.488rem;
+  --font-h3: 2.074rem;
+  --font-h4: 1.728rem;
+  --font-h5: 1.44rem;
+  --font-h6: 1rem;
+  --font-paragh: 1rem;
+  --font-sm-paragh: 0.833rem;
+  --font-sm-alt-paragh: 0.694rem;
+
+  --font-clr-100: white;
+  --font-clr-90: rgb(246, 246, 246);
+  --font-clr-80: rgb(226, 226, 226);
+  --font-clr-70: rgb(227, 227, 227);
+  --font-clr-60: rgb(199, 199, 199);
+  --font-clr-50: #6A6969;
+  --font-clr-40: #5B5A5A;
+  --font-clr-30: #4B4A4A;
+  --font-clr-20: #393838;
+  --font-clr-10: #252424;
+  --font-clr-0: #0F0E0E;
+  --accent-fnt-clr: rgb(1, 250, 1);
+}
+
+h1{
+  font-size: var(--font-h1);
+}
+
+h2{
+  font-size: var(--font-h2);
+}
+
+h3{
+  font-size: var(--font-h3);
+}
+
+h4{
+  font-size: var(--font-h4);
+}
+
+h5{
+  font-size: var(--font-h5);
+}
+
+h6{
+  font-size: var(--font-h6);
+}
+
+p{
+  font-size: var(--font-paragh);
+}
+
+.sm-text{
+  font-size: var(--font-sm-paragh);
+}
+
+.sm-alt-text{
+  font-size: var(--font-sm-alt-paragh);   
+}
+
+.fnt-clr{
+  color: rgb(1, 250, 1);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", serif;
+}
+
+body .appContainer{
+  background: black;
+  color: white;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.Logo{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*----------Login section------------*/
+
+.loginWrapper{
+  width: 350px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background: var(--font-clr-10);
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+form{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.input-ctrl{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  background: none;
+  border: 1.5px solid var(--font-clr-50);
+  border-radius: 10px;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+.input-ctrl input{
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.input-ctrl i{
+  color: var(--font-clr-50);
+}
+
+.forget-remember{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; 
+  margin: 10px auto;
+}
+
+.LoginBtn{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  padding: 10px;
+  background: rgb(1, 250, 1);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 10px auto;
+  cursor: pointer;
+}
+
+.haveAcct{
+  width: 100%;
+}
+
+.loginWrapper a{
+  color: rgb(1, 250, 1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.loginWrapper a:hover{
+  text-decoration: underline;
+}
+
+.input-token-ctrl{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: transparent;
+  padding: 10px;
+}
+
+.input-token-ctrl input{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border: 1.5px solid var(--font-clr-50);
+  background: none;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/*----------Home interface ------------*/
+
+.homeContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.groupedCont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  gap: 10px;
+}
+
+.navBar, .Display-cont, .ctrl-bar{
+  background: var(--font-clr-10);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+
+/*-------------Left nav bar interface----------*/
+.navBar{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  color: white;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.link-wrap{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 10px auto;
+  border-bottom: 1px solid var(--font-clr-50);
+  padding: 5px;
+}
+
+.link-wrap span{
+  margin: 10px auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.link-wrap span i{
+  font-size: 12px;
+  transform: rotate(180deg);
+}
+
+.nav-link{
+  color: var(--font-clr-70);
+  width: 100%;
+  padding: 5px 10px;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.nav-link i{
+  font-size: 14px;
+}
+
+.nav-link:hover{
+  background: var(--font-clr-20);
+}
+
+/*----------------display interface----------*/
+
+.Display-cont{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+/*----------------top navigation interface----------*/
+.top-nav{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.top-nav .search-cont{
+  width: 100%;
+  height: 40px;
+  background: var(--font-clr-20);
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  padding: 5px;
+}
+
+.top-nav .search-cont input{
+  width: 100%;
+  font-size: 14px;
+  height: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  padding: 10px;
+  color: var(--font-clr-100);
+}
+
+.top-nav .search-cont input::placeholder{
+  color: var(--font-clr-50);
+  font-weight: 500;
+}
+
+.top-nav .search-cont button{
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+  background: var(--font-clr-50);
+  color: var(--font-clr-100);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-acct-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  gap: 5px;
+}
+
+.user-acct-wrapper .user-btn{
+  color: var(--font-clr-70);
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  border-radius: 50%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-acct-wrapper .user-btn:hover{
+  background: var(--font-clr-20);
+}
+
+.backBtn{
+  display: none;
+}
+
+
+.ctrl-bar{
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.current-Song-Playing-Sec{
+  width: 250px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.current-Song-Playing-Sec .img-song-grp{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.current-Song-Playing-Sec .img-song-grp .group{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.current-Song-Playing-Sec .img-song-grp div img{
+  width: 36px;
+  height: 36px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.SongInf-grp{
+  display: flex;
+  flex-direction: column;
+}
+
+.SongInf-grp .artist-name{
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.progressBar{
+  width: 100%;
+  height: 4px;
+  background: var(--font-clr-20);
+  margin: 5px auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.progressBar .progress-value{
+  width: 80%;
+  height: 100%;
+  background: var(--accent-fnt-clr);
+  border-radius: 5px;
+}
+
+.add-remove{
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.add-remove span{
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1.5px solid white;
+  cursor: pointer;
+}
+
+.add-remove span i{
+  font-size: 12px;
+}
+
+.controls-sec{
+  width: 280px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.controls-sec span{
+  color: var(--font-clr-50);
+  cursor: pointer;
+}
+
+.play-pause-ctrls{
+  width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.play-pause-ctrls i{
+  cursor: pointer;
+}
+
+
+.play-pause-ctrls i:nth-child(2){
+  font-size: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--accent-fnt-clr);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.song-share-list-sec{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.play-pause-ctrls i:hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+}
+
+.add-remove span:Hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+} 
+.song-share-list-sec i:hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+}
+
+.controls-sec span:hover{
+  transform: scale(1.06);
+  transition: 0.3s;
+}
+
+
+
+/*-----------------home-song-categories---------*/
+
+.songCartDisp{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+.advrt-card{
+  width: 100%;
+  height: 250px;
+  background: rgb(97, 97, 97);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
