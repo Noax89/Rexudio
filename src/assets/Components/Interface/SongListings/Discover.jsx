@@ -1,6 +1,7 @@
 import React from 'react'
 import Navbar from './Home/Navbar'
 import SongCtrl from './Home/SongCtrl'
+import TopNavBar from './Home/TopNavBar'
 
 const Discover = () => {
   return (
@@ -9,6 +10,7 @@ const Discover = () => {
       <Navbar />
       <div className='Display-cont'>
       <div className='songCartDisp'>
+        <TopNavBar />
         
       </div>
       </div>

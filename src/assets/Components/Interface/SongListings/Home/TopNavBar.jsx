@@ -10,7 +10,7 @@ const TopNavBar = () => {
 
   return (
     <div className='top-nav'>
-        <div className={showBackBtn ? "backBtn" :"user-acct-wrapper"}>
+        <div className={!showBackBtn ? "backBtn" :"user-acct-wrapper"}>
         <div className="user-btn"><i className="fa-solid fa-chevron-left"></i></div>
         </div>
 
